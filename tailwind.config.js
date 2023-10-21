@@ -11,6 +11,10 @@ module.exports = {
         orange: {
           main: "#DC7700"
         }
+      },
+      fontFamily: {
+        futura: ["futura-md-bt-medium", "Futura Md BT Medium"],
+        inter: ["Inter", "sans-serif"],
       }
     },
   },
