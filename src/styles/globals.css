@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'futura-md-bt-medium';
+  src: url("http://localhost:3000/fonts/FuturaMediumBT.ttf");
+  font-weight: 400;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,10 +26,5 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: white;
 }
