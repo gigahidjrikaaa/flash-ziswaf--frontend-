@@ -1,0 +1,48 @@
+import Logo from "@/../public/logo.png";
+import Image from "next/image";
+
+export default function AboutSection() {
+  return (
+    <section
+      id="about"
+      className="min-h-screen flex flex-col justify-center items-center bg-white py-[90px] px-[80px] font-inter font-bold"
+    >
+      <h1 className="text-orange-main text-[64px] w-full">
+        About <span className="bg-orange-main text-white">Flash ZISWAF</span>
+      </h1>
+      <div className="flex flex-col lg:flex-row text-orange-main justify-center items-center lg:items-start mt-[90px] gap-[70px]">
+        <Image src={Logo} alt="Logo" className="w-[430px] flex-shrink-0 aspect-square" />
+        <p className="text-[20px] font-inter font-normal text-justify">
+          FLASH ZISWAF, sebuah inovasi dalam pengelolaan dana amal, memanfaatkan
+          teknologi Bitcoin Lightning Network untuk memberikan solusi yang
+          efisien dan transparan dalam rangkaian ZISWAF (Zakat, Infaq, Shadaqah,
+          dan Wakaf). Dengan fokus utama pada penyaluran dana zakat, kami
+          menawarkan pendekatan yang cermat dan terarah, memastikan bahwa setiap
+          sumbangan sampai kepada penerima yang tepat sesuai dengan syariat
+          Islam. Melalui teknologi blockchain, para donatur dapat dengan mudah
+          melacak penggunaan dana mereka, memungkinkan tingkat transparansi yang
+          belum pernah terjadi sebelumnya. Selain itu, platform kami juga
+          memungkinkan penyaluran dana sedekah secara murah, cepat, dan dapat
+          dilacak dengan mudah untuk bantuan korban bencana dan proyek
+          kemanusiaan internasional, menjembatani kesenjangan antara donatur dan
+          penerima dengan efisiensi yang tinggi. 
+          <br/>
+          <br/>
+          Selain itu, kami juga
+          menawarkan solusi inovatif untuk pengelolaan dana wakaf yang sesuai
+          dengan prinsip syariah Islam. Melalui integrasi teknologi blockchain,
+          kami memungkinkan pengelolaan dana wakaf dengan benar dan transparan,
+          memastikan bahwa dana tersebut digunakan sesuai dengan tujuan yang
+          telah ditentukan. Keamanan dan privasi data adalah prioritas utama
+          kami, sehingga Anda dapat yakin bahwa dana dan informasi pribadi Anda
+          terlindungi dengan baik. Dengan aplikasi yang mudah digunakan,
+          platform kami memberikan pengalaman donatur yang lebih baik,
+          memudahkan mereka dalam memberikan kontribusi untuk tujuan amal dengan
+          cepat dan efisien. Dengan platform kami, kami berkomitmen untuk
+          meningkatkan pengalaman beramal Anda dan memberikan dampak positif
+          yang lebih besar dalam ZISWAF.
+        </p>
+      </div>
+    </section>
+  );
+}
