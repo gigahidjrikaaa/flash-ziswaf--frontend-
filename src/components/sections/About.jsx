@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col justify-center items-center bg-white py-[90px] px-[80px] font-inter font-bold"
+      className="min-h-screen flex flex-col justify-center items-center bg-white pt-[90px] py-[50px] px-[80px] font-inter font-bold"
     >
       <h1 className="text-orange-main text-[64px] w-full">
         About <span className="bg-orange-main text-white">Flash ZISWAF</span>
