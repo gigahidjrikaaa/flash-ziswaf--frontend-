@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Navbar() {
   const [lastSection, setLastSection] = useState(0);
   return (
-    <nav className="bg-orange-main flex px-8 justify-between">
+    <nav className="bg-orange-main flex px-8 justify-between fixed top-0 w-full z-[100] shadow-[0_5px_10px_rgba(0,0,0,.25)]">
       <Link href="/" className="flex py-[9px] justify-center items-center w-fit gap-2">
         <Image src={Logo} alt="Logo" className="w-[46px]" />
         <h1 className="font-futura text-[32px]">Flash Ziswaf</h1>
