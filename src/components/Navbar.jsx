@@ -2,11 +2,18 @@ import Image from "next/image";
 import Logo from "../../public/logo.png";
 import Link from "next/link";
 import { useState } from "react";
+import useScrollDirection from "@/hooks/useScrollDirection";
 
 export default function Navbar() {
   const [lastSection, setLastSection] = useState(0);
+  const scrollDir = useScrollDirection();
+
   return (
-    <nav className="bg-orange-main flex px-8 justify-between fixed top-0 w-full z-[100] shadow-[0_5px_10px_rgba(0,0,0,.25)]">
+    <nav className={"bg-orange-main flex px-8 justify-between fixed top-0 w-full z-[100] shadow-[0_5px_10px_rgba(0,0,0,.25)] transition duration-300 " + (
+      scrollDir === "down" ? 
+        "-translate-y-[100%]" :
+        "translate-y-0"
+    )}>
       <Link href="/" className="flex py-[9px] justify-center items-center w-fit gap-2">
         <Image src={Logo} alt="Logo" className="w-[46px]" />
         <h1 className="font-futura text-[32px]">Flash Ziswaf</h1>
