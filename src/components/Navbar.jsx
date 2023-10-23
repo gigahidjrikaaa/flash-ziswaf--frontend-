@@ -12,7 +12,7 @@ export default function Navbar() {
         <h1 className="font-futura text-[32px]">Flash Ziswaf</h1>
       </Link>
 
-      <div className="flex justify-center items-center font-inter text-[20px]">
+      <div className="hidden lg:flex justify-center items-center font-inter text-[20px]">
         <Link
           href="#home"
           className={
