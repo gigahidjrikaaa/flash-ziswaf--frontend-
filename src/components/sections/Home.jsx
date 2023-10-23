@@ -82,7 +82,7 @@ export default function HomeSection() {
 
 function SliderContent({headerTitle, headerContent}) {
   return (
-    <div className="text-[20px] md:text-[25px] xl:text-[32px] relative z-1 flex flex-col gap-[50px] md:gap-[80px] xl:gap-[115px] justify-start pt-[100px] md:pt-[150px] xl:pt-[200px] items-center min-h-screen font-inter">
+    <div className="text-[20px] md:text-[25px] xl:text-[32px] relative z-1 flex flex-col gap-[50px] md:gap-[80px] xl:gap-[115px] justify-start pt-[150px] xl:pt-[200px] items-center min-h-screen font-inter">
       <div>
         <h1 className="text-[35px] md:text-[40px] xl:text-[64px] px-[44px] text-shadow-orange text-orange-main font-bold text-center">
           {headerTitle || "Donate to Palestinians"}
@@ -99,7 +99,7 @@ function SliderContent({headerTitle, headerContent}) {
           <br />
           <span className="italic">(Sûrat Al-Mujâdilah, 58:13)</span>
         </p>
-        <div className="text-orange-main pt-[60px] pb-5 px-[5%] md:px-[30px] xl:px-[44px] flex flex-col justify-center items-center gap-[60px]">
+        <div className="text-orange-main pt-[45px] md:pt-[60px] pb-5 px-[5%] md:px-[30px] xl:px-[44px] flex flex-col justify-center items-center gap-[40px] md:gap-[60px]">
           <p className="text-center max-w-[800px] text-[25px] md:text-[30px] xl:text-[40px] mx-auto">
             Faster and more transparent donations with
             <span className="font-bold"> Lightning Network!</span>
