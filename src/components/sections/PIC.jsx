@@ -7,7 +7,7 @@ export default function PICSection() {
   return (
     <section
       id="pic"
-      className="flex flex-col justify-center items-center bg-white pt-5 pb-[90px] px-[80px] font-inter text-orange-main"
+      className="flex flex-col justify-center items-center bg-white pt-5 pb-[90px] px-[6%] md:px-[50px] xl:px-[80px] font-inter text-orange-main"
     >
       <h1 className="text-[40px] font-bold w-full text-center xl:text-left mb-[30px]">
         People in Charge
