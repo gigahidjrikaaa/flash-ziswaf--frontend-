@@ -10,7 +10,7 @@ import "swiper/css";
 
 export default function HomeSection() {
   return (
-    <section id="home" className="min-h-screen relative pb-[120px]">
+    <section id="home" className="min-h-screen relative pb-[50px] md:pb-[80px] xl:pb-[120px]">
       <div className="top-0">
         <Swiper
           spaceBetween={0}

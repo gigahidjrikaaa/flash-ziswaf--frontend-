@@ -5,12 +5,12 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="min-h-screen flex flex-col justify-center items-center bg-white pt-[90px] py-[50px] px-[80px] font-inter font-bold"
+      className="min-h-screen flex flex-col justify-center items-center bg-white pt-[90px] py-[20px] md:py-[35px] xl:py-[50px] px-[5%] md:px-[50px] xl:px-[80px] font-inter font-bold"
     >
-      <h1 className="text-orange-main text-[64px] w-full">
+      <h1 className="text-orange-main text-[35px] md:text-[40px] xl:text-[64px] w-full">
         About <span className="bg-orange-main text-white">Flash ZISWAF</span>
       </h1>
-      <div className="flex flex-col lg:flex-row text-orange-main justify-center items-center lg:items-start mt-[90px] gap-[70px]">
+      <div className="flex flex-col lg:flex-row text-orange-main justify-center items-center lg:items-start mt-[90px] gap-[40px] lg:gap-[50px] xl:gap-[70px]">
         <Image src={Logo} alt="Logo" className="w-[430px] flex-shrink-0 aspect-square" />
         <p className="text-[20px] font-inter font-normal text-justify">
           FLASH ZISWAF, sebuah inovasi dalam pengelolaan dana amal, memanfaatkan
