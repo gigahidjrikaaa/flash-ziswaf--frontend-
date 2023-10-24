@@ -10,13 +10,16 @@ import "swiper/css";
 
 export default function HomeSection() {
   return (
-    <section id="home" className="min-h-screen relative pb-[50px] md:pb-[80px] xl:pb-[120px]">
+    <section
+      id="home"
+      className="min-h-screen relative pb-[50px] md:pb-[80px] xl:pb-[120px]"
+    >
       <div className="top-0">
         <Swiper
           spaceBetween={0}
           allowTouchMove={false}
           autoplay={{
-            delay: 2000,
+            delay: 5000,
             disableOnInteraction: true,
           }}
           navigation={{
@@ -54,11 +57,9 @@ export default function HomeSection() {
               className="absolute w-screen min-w-[920px] select-none"
               alt="Home 3"
             />
-            <SliderContent 
+            <SliderContent
               headerTitle={"Donate to Orphans"}
-              headerContent={
-                "Be their hero. Be their hope. Be the change."
-              }
+              headerContent={"Be their hero. Be their hope. Be the change."}
             />
           </SwiperSlide>
           <SwiperSlide className="relative min-h-screen">
@@ -69,9 +70,7 @@ export default function HomeSection() {
             />
             <SliderContent
               headerTitle={"Donate to Disaster Relief"}
-              headerContent={
-                "Help rebuild and reconstruct society."
-              }
+              headerContent={"Help rebuild and reconstruct society."}
             />
           </SwiperSlide>
         </Swiper>
@@ -80,7 +79,7 @@ export default function HomeSection() {
   );
 }
 
-function SliderContent({headerTitle, headerContent}) {
+function SliderContent({ headerTitle, headerContent }) {
   return (
     <div className="text-[20px] md:text-[25px] xl:text-[32px] relative z-1 flex flex-col gap-[50px] md:gap-[80px] xl:gap-[115px] justify-start pt-[150px] xl:pt-[200px] items-center min-h-screen font-inter">
       <div>
