@@ -7,12 +7,12 @@ export default function AboutSection() {
       id="about"
       className="flex flex-col justify-center items-center bg-white !pt-[90px] xl:pt-[120px] py-[20px] md:py-[35px] xl:py-[50px] px-[5%] md:px-[50px] xl:px-[80px] font-inter font-bold"
     >
-      <h1 className="text-orange-main text-[35px] md:text-[40px] xl:text-[64px] w-full">
+      <h1 className="text-orange-main text-center text-[35px] md:text-[40px] xl:text-[64px] w-full">
         About <span className="bg-orange-main text-white">Flash ZISWAF</span>
       </h1>
       <div className="flex flex-col xl:flex-row text-orange-main justify-center items-center xl:items-start mt-[50px] md:mt-[70px] xl:mt-[90px] gap-[40px] lg:gap-[50px] xl:gap-[70px]">
         <Image src={Logo} alt="Logo" className="w-[300px] xl:w-[430px] flex-shrink-0 aspect-square" />
-        <p className="text-[20px] font-inter font-normal text-justify">
+        <p className="text-[20px] font-inter font-normal text-justify max-w-[735px]">
           FLASH ZISWAF, sebuah inovasi dalam pengelolaan dana amal, memanfaatkan
           teknologi Bitcoin Lightning Network untuk memberikan solusi yang
           efisien dan transparan dalam rangkaian ZISWAF (Zakat, Infaq, Shadaqah,
