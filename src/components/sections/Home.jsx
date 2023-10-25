@@ -8,7 +8,7 @@ import Home4 from "@/../public/home-4.png";
 import LightningNetwork from "@/../public/lightning-network.png";
 import "swiper/css";
 
-export default function HomeSection() {
+export default function HomeSection({ setOpenPaymentOptions }) {
   return (
     <section
       id="home"
@@ -36,7 +36,7 @@ export default function HomeSection() {
               className="absolute w-screen min-w-[920px] select-none"
               alt="Home 1"
             />
-            <SliderContent />
+            <SliderContent setOpenPaymentOptions={setOpenPaymentOptions} />
           </SwiperSlide>
           <SwiperSlide className="relative min-h-screen">
             <Image
@@ -49,6 +49,7 @@ export default function HomeSection() {
               headerContent={
                 "Make a million prayers possible, one brick at a time."
               }
+              setOpenPaymentOptions={setOpenPaymentOptions}
             />
           </SwiperSlide>
           <SwiperSlide className="relative min-h-screen">
@@ -60,6 +61,7 @@ export default function HomeSection() {
             <SliderContent
               headerTitle={"Donate to Orphans"}
               headerContent={"Be their hero. Be their hope. Be the change."}
+              setOpenPaymentOptions={setOpenPaymentOptions}
             />
           </SwiperSlide>
           <SwiperSlide className="relative min-h-screen">
@@ -71,6 +73,7 @@ export default function HomeSection() {
             <SliderContent
               headerTitle={"Donate to Disaster Relief"}
               headerContent={"Help rebuild and reconstruct society."}
+              setOpenPaymentOptions={setOpenPaymentOptions}
             />
           </SwiperSlide>
         </Swiper>
@@ -79,7 +82,7 @@ export default function HomeSection() {
   );
 }
 
-function SliderContent({ headerTitle, headerContent }) {
+function SliderContent({ headerTitle, headerContent, setOpenPaymentOptions }) {
   return (
     <div className="text-[20px] md:text-[25px] xl:text-[32px] relative z-1 flex flex-col gap-[50px] md:gap-[80px] xl:gap-[115px] justify-start pt-[150px] xl:pt-[200px] items-center min-h-screen font-inter">
       <div>
@@ -112,7 +115,12 @@ function SliderContent({ headerTitle, headerContent }) {
             <button className="bg-orange-main text-white rounded-full flex-shrink-0 py-5 xl:px-20">
               Learn Now
             </button>
-            <button className="box-border text-orange-main border-[3px] border-orange-main rounded-full flex-shrink-0 py-5 xl:px-20">
+            <button
+              className="box-border text-orange-main border-[3px] border-orange-main rounded-full flex-shrink-0 py-5 xl:px-20"
+              onClick={() => {
+                setOpenPaymentOptions(true);
+              }}
+            >
               Donate Now
             </button>
           </div>
