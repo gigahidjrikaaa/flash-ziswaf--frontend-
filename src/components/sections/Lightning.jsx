@@ -43,7 +43,7 @@ export default function LightningSection() {
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
+        allowFullScreen
         className="mx-auto w-[90%] lg:max-w-[900px] xl:max-w-[1100px] aspect-video"
       ></iframe>
     </section>
