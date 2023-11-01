@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "../../public/logo.png";
+import Logo from "../../public/Logo.png";
 import Link from "next/link";
 import { useState } from "react";
 import useScrollDirection from "@/hooks/useScrollDirection";

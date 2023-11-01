@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Gigong from "@/../public/gigong.png";
-import Mumtaz from "@/../public/mumtaz.png";
-import Galih from "@/../public/galih.png";
+import Gigong from "@/../public/Gigong.png";
+import Mumtaz from "@/../public/Mumtaz.png";
+import Galih from "@/../public/Galih.png";
 
 export default function PICSection() {
   return (
